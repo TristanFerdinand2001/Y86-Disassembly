@@ -21,7 +21,7 @@ int main(int argc, char **argv)
   if (program_size == 0)
     return 0;
 
-  //TODO: Implement your disassembler from here
+  //Implement disassembler
   //At the moment, it simply display each byte from the memory.
   while (PC < program_size)
   {
@@ -314,13 +314,8 @@ int main(int argc, char **argv)
 
   return 0; 
 
-
-/****************************************************************************
-N.B. You do not need to modify or work in this function.
-Description:
-This function reads in a y86 machine bytecode from file and
-store them in an unsigned char array.
-******************************************************************************/
+// This function reads in a y86 machine bytecode from file and
+// store them in an unsigned char array.
 unsigned int loadBinFromFile(const char *filename, unsigned char memory[], unsigned int memsize)
 {
   unsigned int bytes_read = 0;
