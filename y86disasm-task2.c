@@ -39,12 +39,9 @@ int main(int argc, char **argv) {
     unsigned char instruction[6] = {0, 0, 0, 0, 0, 0};
     convertStrToByteCode(buffer, instruction, 6);
 
-    // TODO: From here, your task is to complete the implementation so that all
     // y86 opcode and operands can be disassembled. Any undisassembled opcode
     // should display as "TODO: undisassembled opcode and operands"
-
   
-    
     ////DECODING/FLIPPING SMALL ENDIAN TO BIG ENDIAN FORMAT////
    if(instruction[0] == 0x10) {
     printf("nop \n");    //Instruction with no operand
@@ -327,13 +324,9 @@ int main(int argc, char **argv) {
   return 0;
 }
 
-/****************************************************************************
-N.B. You do not need to modify or work in this function.
-Description:
-This function converts a line of machine code read from the text file
-into machine byte code.
-The machine code is stored in an unsigned char array.
-******************************************************************************/
+// This function converts a line of machine code read from the text file
+// into machine byte code.
+// The machine code is stored in an unsigned char array.
 int convertStrToByteCode(const char *str, unsigned char inst[], int size) {
   int numHexDigits = 0;
   char *endstr;
