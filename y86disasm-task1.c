@@ -28,8 +28,7 @@ int main(int argc, char **argv) {
     unsigned char instruction[6] = {0, 0, 0, 0, 0, 0};
     convertStrToByteCode(buffer, instruction, 6);
 
-    // TODO: From here, your task is to complete the implementation so that all
-    // y86 opcodes can be disassembled. 
+// y86 opcodes can be disassembled. 
 if (instruction[0]==0x10)
 {
   printf("nop\n");
@@ -149,7 +148,7 @@ if (instruction[0]==0x10)
 //Any undisassembled opcode should display as "TODO: undisassembled opcode"
     //printf("TODO: undisassembled opcode. The first byte of the instruction is "
  //          "0x%X\n",
-      //     instruction[0]);
+ //     instruction[0]);
   
     }
   fclose(pFile);
@@ -157,13 +156,6 @@ if (instruction[0]==0x10)
   return 0;
 }
 
-/****************************************************************************
-N.B. You do not need to modify or work in this function.
-Description:
-This function converts a line of machine code read from the text file
-into machine byte code.
-The machine code is stored in an unsigned char array.
-******************************************************************************/
 int convertStrToByteCode(const char *str, unsigned char inst[], int size) {
   int numHexDigits = 0;
   char *endstr;
