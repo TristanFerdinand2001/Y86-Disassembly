@@ -145,11 +145,6 @@ if (instruction[0]==0x10)
   {
     printf("halt\n");
   }
-//Any undisassembled opcode should display as "TODO: undisassembled opcode"
-    //printf("TODO: undisassembled opcode. The first byte of the instruction is "
- //          "0x%X\n",
- //     instruction[0]);
-  
     }
   fclose(pFile);
 
