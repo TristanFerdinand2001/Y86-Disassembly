@@ -313,12 +313,6 @@ int main(int argc, char **argv) {
       // instruction[3]=00
     }
   }
-
-  // { printf("TODO: undisassembled opcode and operands\n"); }
-  // { printf("TODO: undisassembled opcode and operands\n"); }
-  // { printf("TODO: undisassembled opcode and operands\n"); }
-  // { printf("TODO: undisassembled opcode and operands\n"); }
-
   fclose(pFile);
 
   return 0;
